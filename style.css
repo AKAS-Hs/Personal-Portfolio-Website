@@ -4,6 +4,13 @@
     --main-color: #ffae00;
     --gr-color:#3b444b;
 
+
+    --first--color:#1f242d;
+    --second--bg--color:#323946;
+    --third-color:#fff;
+    --fourth-color:rgb(35, 149, 255);   
+
+
     --big-font: 7rem;
     --p-font: 2rem;
 
@@ -138,7 +145,7 @@
 .social{
     position: absolute;
     bottom: 3rem;
-    left: 17.5%;
+    left: 17%;
     top: 65%;
     display: flex;
 }
@@ -184,7 +191,7 @@
 
 }
 .third-container {
-    background-color: var(--bg-color);
+    background-color: var(--gr-color);
     height: 930px;
     padding-top: 10px;
 }
@@ -208,6 +215,7 @@
     color: var(--text-color);
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
+    box-shadow:  0 0 1rem var(--main-color);
     font-weight: 600;
     margin-top: 10px;
     margin-left: 5%;
@@ -218,7 +226,59 @@
     align-items: center;
 
 
+
 }
+
+.skillls{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    color: var(--text-color);
+    
+}
+.skillls-container {
+    background-color: var(--bg-color);
+    height: 200vh;
+    padding-top: 10px;
+}
+
+
+
+.myskills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    }
+    .myskills-container .skills-box{
+        flex: 1 1 30rem;
+        background: var(--second--bg--color);
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        border: .2rem solid var(--bg-color);
+        transition: .5s ease;
+    }
+    
+    .myskills-container .skills-box:hover {
+        border-color: var(--main-color);
+        transform: scale(1.02);
+    }
+    .skills-box i{
+        font-size: 7rem;
+        color: var(--main-color);
+    
+    }
+    
+    .skills-box h3{
+        font-size: 2.6rem;
+        color: var(--text-color);
+    }
+    .skills-box p{
+        font-size: 1.6rem;
+        margin: 1rem 0 3rem;
+        color: var(--text-color);
+    }
 /*.about-content{
     
     
